@@ -53,17 +53,17 @@ Colorlib_Customizer::add_field(
             [
                 'social_link_title' => esc_html__( 'Facebook', 'montana' ),
                 'social_url'  => '#',
-                'social_icon'  => 'fa fa-facebook-square',
+                'social_icon'  => 'fa-brands fa-facebook-square',
             ],
             [
                 'social_link_title' => esc_html__( 'Twitter', 'montana' ),
                 'social_url'  => '#',
-                'social_icon'  => 'fa fa-twitter',
+                'social_icon'  => 'fa-brands fa-twitter',
             ],
             [
                 'social_link_title' => esc_html__( 'Instagram', 'montana' ),
                 'social_url'  => '#',
-                'social_icon'  => 'fa fa-instagram',
+                'social_icon'  => 'fa-brands fa-instagram',
             ],
         ],
 		'fields'       => array(
@@ -82,7 +82,7 @@ Colorlib_Customizer::add_field(
 			'social_icon'        => array(
 				'label'   => esc_html__( 'Icon', 'montana' ),
 				'type'    => 'colorlib-icon-picker',
-				'default' => 'fa fa-facebook-square',
+				'default' => 'fa-brands fa-facebook-square',
 			),
 			
 		),

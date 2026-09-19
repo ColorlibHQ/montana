@@ -7,7 +7,7 @@
     <div class="header-area ">
         <div id="sticky-header" class="main-header-area">
             <div class="container-fluid p-0">
-                <div class="row align-items-center no-gutters">
+                <div class="row align-items-center g-0">
                     <div class="col-xl-5 col-lg-6">
                         <div class="main-menu d-none d-lg-block">
                             <nav>
