@@ -198,12 +198,6 @@ final class Montana {
 					'version'    => '1.0',
 				),
 				array(
-					'handler'    => 'montana-gijgo',
-					'file'       => $cssPath . 'gijgo.css',
-					'dependency' => array(),
-					'version'    => '1.0',
-				),
-				array(
 					'handler'    => 'montana-animate',
 					'file'       => $cssPath . 'animate.css',
 					'dependency' => array(),
