@@ -142,13 +142,10 @@ autoplaySpeed: 800,
 	});
   
   // wow js
-  new WOW().init();
+  ColorlibUI.reveal('.wow');
 
   // counter 
-  $('.counter').counterUp({
-    delay: 10,
-    time: 10000
-  });
+  ColorlibUI.counter('.counter', { time: 10000 });
 
 /* magnificPopup img view */
 $('.popup-image').magnificPopup({
@@ -260,7 +257,7 @@ dots:false,
 });
 
 if (document.getElementById('default-select')) {
-  $('select').niceSelect();
+  ColorlibUI.enhanceSelects('select');
 }
 
   //about-pro-active
@@ -354,20 +351,6 @@ mailChimp();
   //   }
   // });
 
-  function cp_instagram_photos() {
-    $('.instragram_area').each(function(){
-        $.instagramFeed({
-            'username': $(this).data('username'),
-            'container': $(this),
-            'display_profile': false,
-            'display_biography': false,
-            'items': $(this).data('items'),
-            'margin': 0
-        });
-        console.log( $(this) );
-    });
-
-}
-cp_instagram_photos();
+  
 
 })(jQuery);	

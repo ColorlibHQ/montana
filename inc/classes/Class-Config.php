@@ -249,20 +249,6 @@ final class Montana {
 					'in_footer'  => true,
 				),
 				array(
-					'handler'    => 'montana-waypoints-js',
-					'file'       => $jsPath . 'waypoints.min.js',
-					'dependency' => array( 'jquery' ),
-					'version'    => '1.0',
-					'in_footer'  => true,
-				),
-				array(
-					'handler'    => 'montana-jquery-counterup-js',
-					'file'       => $jsPath . 'jquery.counterup.min.js',
-					'dependency' => array( 'jquery' ),
-					'version'    => '1.0',
-					'in_footer'  => true,
-				),
-				array(
 					'handler'    => 'scrollIt-js',
 					'file'       => $jsPath . 'scrollIt.js',
 					'dependency' => array( 'jquery' ),
@@ -272,20 +258,6 @@ final class Montana {
 				array(
 					'handler'    => 'jquery-scrollUp-js',
 					'file'       => $jsPath . 'jquery.scrollUp.min.js',
-					'dependency' => array( 'jquery' ),
-					'version'    => '1.0',
-					'in_footer'  => true,
-				),
-				array(
-					'handler'    => 'montana-wow-js',
-					'file'       => $jsPath . 'wow.min.js',
-					'dependency' => array( 'jquery' ),
-					'version'    => '1.0',
-					'in_footer'  => true,
-				),
-				array(
-					'handler'    => 'montana-nice-select-js',
-					'file'       => $jsPath . 'nice-select.min.js',
 					'dependency' => array( 'jquery' ),
 					'version'    => '1.0',
 					'in_footer'  => true,
@@ -319,13 +291,6 @@ final class Montana {
 					'in_footer'  => true,
 				),				
 				array(
-					'handler'    => 'jquery-instagramFeed-js',
-					'file'       => $jsPath . 'jquery.instagramFeed.js',
-					'dependency' => array( 'jquery' ),
-					'version'    => '1.0',
-					'in_footer'  => true,
-				),
-				array(
 					'handler'    => 'montana-jquery-ajaxchimp-js',
 					'file'       => $jsPath . 'jquery.ajaxchimp.min.js',
 					'dependency' => array( 'jquery' ),
@@ -340,10 +305,17 @@ final class Montana {
 					'in_footer' 	=> true
 				),
 				array(
+					'handler'		=> 'montana-ui-js',
+					'file' 			=> $jsPath.'colorlib-ui.js',
+					'dependency' 	=> array(),
+					'version' 		=> '2.1.1',
+					'in_footer' 	=> true
+				),
+				array(
 					'handler'    => 'montana-main-js',
 					'file'       => $jsPath . 'main.js',
-					'dependency' => array( 'jquery' ),
-					'version'    => $this->montana_version,
+					'dependency' => array( 'jquery', 'montana-ui-js' ),
+					'version'    => $this->montana_version . '-s1',
 					'in_footer'  => true,
 				),
 
