@@ -219,7 +219,7 @@ final class Montana {
 					'handler'    => 'montana-main-style',
 					'file'       => $cssPath . 'style.css',
 					'dependency' => array(),
-					'version'    => $this->montana_version,
+					'version'    => $this->montana_version . '-s3',
 				),
 				array(
 					'handler' => 'montana-style',
